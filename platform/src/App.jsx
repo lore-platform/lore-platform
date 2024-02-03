@@ -1,15 +1,14 @@
-import "./App.css";
 import "./global-styles.scss";
 import { Navbar } from "./global_components/Navbar";
-import { SearchBar } from "./global_components/SearchBar";
+// import { SearchBar } from "./global_components/SearchBar";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <SearchBar />
-      <hr />
-      <h1>This is my app</h1>
+      <div className="py-7 px-10">
+        <Navbar />
+        <h1>Hi guys this is a test sorry!</h1>
+      </div>
     </>
   );
 }
