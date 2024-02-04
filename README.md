@@ -24,7 +24,7 @@
 git clone https://github.com/lore-platform/lore-platform.git
 ```
 
-**2. Open the folder in you code editor**
+**2. Open the folder in your code editor**
 
 **3. Move into the `.\platform` folder by using this command:**
 
@@ -32,7 +32,7 @@ git clone https://github.com/lore-platform/lore-platform.git
 cd .\platform\
 ```
 
-**4. Install the dependancies by using this command:**
+**4. Install the dependencies by using this command:**
 
 ```cmd
 npm install
@@ -99,13 +99,13 @@ View the current project's folder structure and a description of the folders.
 
 ### Working On A Specfic Task
 
-If you are working on a task from the Trello board, creating a page / part of a page, creating a bunch of components - when you are working on new code, follow this workflow please~!
+If you are working on a task from the Trello board, creating a page/part of a page, or creating a bunch of components - when you are working on new code, follow this workflow please~!
 
 1. Create a new branch from the `main` branch (follow the [Branch Naming Conventions](#branch-naming-conventions) on how to name the new branch)
 2. Write your code
 3. Commit your code change to your branch locally
 4. When you think you are done with your changes, go back to the [project's repo online](https://github.com/lore-platform/lore-platform/tree/main)
-5. In the Navgivation bar, click 'Pull Requests'
+5. In the Navigation bar, click 'Pull Requests'
 6. Click 'New pull request'
 7. Follow the steps in the '[How To Make Pull Requests](#how-to-make-pull-requests)'
 
@@ -115,8 +115,8 @@ Now that you made your changes, you need to make pull requests so other people c
 
 Follow these steps in making a pull request:
 
-1. Go to to the [project's repo online](https://github.com/lore-platform/lore-platform/tree/main)
-2. Click 'New pull request' in the Pull Requests page
+1. Go to the [project's repo online](https://github.com/lore-platform/lore-platform/tree/main)
+2. Click 'New pull request' on the Pull Requests page
 3. Compare changes: the `base` should be **'main'**, and `compare` should be **the name of your branch**
 4. Click **'Create Pull Request'**
 5. The Title of the Pull Request should be {branch name} - {the title of the task from the Trello board}
@@ -128,13 +128,14 @@ Follow these steps in making a pull request:
 8. Click the 'Create Pull Request' button
 9. Wait for Izzy to review you code
    - You might need to make changes if she asks for some
-10. After Izzy approves you code, go back to your pull request page
+10. After Izzy approves your code, go back to your pull request page
 11. Find the 'Merge pull request' button and click the down arrow on the right
 12. Click the 'Squash and merge' option
-    - This will turn all of you commits into one big commit
+    - This will turn all of your commits into one big commit
 13. Click the button again
-14. In the popup, make sure the title is correct - delete the '(#)' and a number next it
+14. In the popup, make sure the title is correct
 15. Leave the description as it is - it is just a list of the commits you made
+16. Well done! It has merged with the main branch! Finally, click the 'Delete branch' button.
 
 ### Branch Naming Conventions
 
