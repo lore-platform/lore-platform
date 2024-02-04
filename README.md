@@ -1,8 +1,9 @@
-<h1 align="center"> Welcome to the LORE website development </h1>
+<h1 align="center" id="h1"> Welcome to the LORE website development </h1>
 
 <p align="center">This is the code repo for the LORE website. This file will help guide you on how the structure of the project works.</p>
 
-<p align="center">📆 <b>Last updated:</b> Sat 03 Feb '24</p>
+<p align="center">📆 <b>Last updated:</b> 04 Feb 2024</p>
+<p align="center"><a href="README-Rus.md">⬆️ Russian/Русский ⬆️</a></p>
 
 ## Table of Contents
 
@@ -46,11 +47,11 @@ This will create the `node_modules` folder, `package-lock.json`, and an updated 
 npm run dev
 ```
 
-[⬆️ Back To Top ⬆️](#welcome-to-the-lore-website-development)
+[⬆️ Back To Top ⬆️](#table-of-contents)
 
 ## 🍋 Project's Files/Folder Structure
 
-View the current project's folder structure and a description of the folders.
+View the current project's folder structure, also the descriptions of the files and folders are given.
 
 ### Diagram of The Folder Structure
 
@@ -73,29 +74,29 @@ View the current project's folder structure and a description of the folders.
 
 ### Folders Description Table
 
-| Folder Name     | Description                                                                                                                               |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| platform        | Where the main code lives. The LORE website app is ran from here.                                                                         |
-| node_modules    | Contains all the project's dependencies and their dependencies. When you run `npm install`, Node.js installs the necessary packages here. |
-| src             | Contains the actual source code of the LORE website application.                                                                          |
-| assets          | Stores static assets such as images, fonts, etc that are specific to the project.                                                         |
-| components      | This is where reusable components from [Shadcn/ui component library](https://ui.shadcn.com/) are stored.                                  |
-| lore_components | This is where the components we build ourselves are stored.                                                                               |
-| styles          | This is where the stylesheets for the entire application are stored.                                                                      |
+| Folder Name     | Description                                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------------------------ |
+| platform        | Where the main code lives. The LORE website app is ran from here.                                                  |
+| node_modules    | Contains all the project's dependencies. When you run `npm install`, Node.js installs the necessary packages here. |
+| src             | Contains the actual source code of the LORE website application.                                                   |
+| assets          | Stores static assets such as images, fonts, etc that are specific to the project.                                  |
+| components      | This is where reusable components from [Shadcn/ui component library](https://ui.shadcn.com/) are stored.           |
+| lore_components | This is where the components we build ourselves are stored.                                                        |
+| styles          | This is where the stylesheets for the entire application are stored.                                               |
 
 ### Files Description Table
 
 | File Name          | Description                                                                                                                                                                                |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| main.jsx           | The entry point for the LORE website application. It typically renders the main component of your application into the root DOM element.                                                   |
-| App.jsx            | The main component of your application. This component is usually responsible for rendering other components and does more.                                                                |
+| main.jsx           | The entry point for the LORE website application. It typically renders the main component of the LORE website application into the root DOM element.                                       |
+| App.jsx            | The main component of the LORE website application. This component is usually responsible for rendering other components and does more.                                                    |
 | global-styles.scss | Contains the CSS styling (in a SCSS format) for the entire application.                                                                                                                    |
 | index.css          | This is just the entry point for TailwindCSS to be used in the application.                                                                                                                |
 | index.html         | The main HTML file that serves as the entry point for the LORE website application. It usually contains a root DOM element where the LORE website application is mounted using JavaScript. |
 
-[⬆️ Back To Top ⬆️](#welcome-to-the-lore-website-development)
+[⬆️ Back To Top ⬆️](#table-of-contents)
 
-## 🧁 Recommended Worflow
+## 🧁 Recommended Workflow
 
 ### Working On A Specfic Task
 
@@ -111,7 +112,7 @@ If you are working on a task from the Trello board, creating a page/part of a pa
 
 ### How To Make Pull Requests
 
-Now that you made your changes, you need to make pull requests so other people can check your work before we can push your changes into the `main` branch and into deployment.
+Now that you made your changes, you need to make a pull request so that other people can check your work before we can push your changes into the `main` branch and into deployment.
 
 Follow these steps in making a pull request:
 
@@ -123,7 +124,7 @@ Follow these steps in making a pull request:
    - _For example: LO-0001 - Create the navigation bar component_
 6. You do not need to add a description. You can if you want.
 7. Look on the right side navigation bar:
-   - Assignes: Assign yourself
+   - Assignees: Assign yourself
    - Reviewers: Assign izicodes (Izzy Zennah)
 8. Click the 'Create Pull Request' button
 9. Wait for Izzy to review you code
@@ -147,4 +148,4 @@ We need to keep track of the branches that will merge into the `main` branch. Fo
 - The number is found from the task on the [Trello Board](https://trello.com/b/H5r3AFI2/main-development-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5-p%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5)
 - The branch name is given in the task on the [Trello Board](https://trello.com/b/H5r3AFI2/main-development-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5-p%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5)
 
-[⬆️ Back To Top ⬆️](#welcome-to-the-lore-website-development)
+[⬆️ Back To Top ⬆️](#table-of-contents)
