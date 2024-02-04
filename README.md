@@ -95,7 +95,7 @@ View the current project's folder structure, also the descriptions of the files 
 
 [⬆️ Back To Top ⬆️](#table-of-contents)
 
-## 🧁 Recommended Worflow
+## 🧁 Recommended Workflow
 
 ### Working On A Specfic Task
 
