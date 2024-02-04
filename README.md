@@ -3,7 +3,7 @@
 <p align="center">This is the code repo for the LORE website. This file will help guide you on how the structure of the project works.</p>
 
 <p align="center">📆 <b>Last updated:</b> Sat 03 Feb '24</p>
-<p align="center"><a href="README-Rus.md">⬆️Russian/Русский</a></p>
+<p align="center"><a href="README-Rus.md">⬆️ Russian/Русский ⬆️</a></p>
 
 ## Table of Contents
 
