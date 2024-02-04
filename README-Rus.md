@@ -7,8 +7,8 @@
 ## Оглавление
 
 - [🍇 Настройка проекта на локальном компьютере](#🍇-настройка-проекта-на-локальном-компьютере)
-- [🍋 Project's Files/Folder Structure](#🍋-projects-filesfolder-structure)
-  - [Diagram of The Folder Structure](#diagram-of-the-folder-structure)
+- [🍋 Файловая/Папковая структура проекта.](#🍋-файловаяпапковая-структура-проекта)
+  - [Диаграмма структуры папок](#диаграмма-структуры-папок)
   - [Folders Description Table](#folders-description-table)
   - [Files Description Table](#files-description-table)
 - [🧁 Recommended Worflow](#🧁-recommended-worflow)
@@ -46,13 +46,13 @@ npm install
 npm run dev
 ```
 
-[⬆️ Вернуться наверх ⬆️](#оглавление)
+[⬆️ Вернуться Наверх ⬆️](#оглавление)
 
-## 🍋 Project's Files/Folder Structure
+## 🍋 Файловая/Папковая Структура Проекта
 
-View the current project's folder structure and a description of the folders.
+Посмотреть текущую структуру папок проекта, также представлены описания файлов и папок.
 
-### Diagram of The Folder Structure
+### Диаграмма Структуры Папок
 
 ```cmd
 📂 platform/
@@ -68,32 +68,32 @@ View the current project's folder structure and a description of the folders.
 |   |-- 📄 index.css
 |   |-- 📄 main.jsx
 |-- index.html
-|-- ... (the rest of the files here are not too important)
+|-- ... (Остальные файлы здесь не так важны)
 ```
 
-### Folders Description Table
+### Таблица Описания Папок
 
-| Folder Name     | Description                                                                                                                               |
+| Имя Папки       | Описание                                                                                                                                  |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| platform        | Where the main code lives. The LORE website app is ran from here.                                                                         |
-| node_modules    | Contains all the project's dependencies and their dependencies. When you run `npm install`, Node.js installs the necessary packages here. |
-| src             | Contains the actual source code of the LORE website application.                                                                          |
-| assets          | Stores static assets such as images, fonts, etc that are specific to the project.                                                         |
-| components      | This is where reusable components from [Shadcn/ui component library](https://ui.shadcn.com/) are stored.                                  |
-| lore_components | This is where the components we build ourselves are stored.                                                                               |
-| styles          | This is where the stylesheets for the entire application are stored.                                                                      |
+| platform        | Здесь находится основной код. Из этого места запускается приложение веб-сайта LORE.                                                                         |
+| node_modules    | Содержит все зависимости проекта. При выполнении `npm install` Node.js устанавливает необходимые пакеты здесь. |
+| src             | Содержит фактический исходный код приложения веб-сайта LORE.                                                                         |
+| assets          | Содержит статические ресурсы, такие как изображения, шрифты и т. д., которые специфичны для проекта.                                                        |
+| components      | Здесь хранятся многоразовые компоненты из [библиотеки компонентов Shadcn/ui](https://ui.shadcn.com/).                                  |
+| lore_components | Здесь хранятся компоненты, которые мы сами создаем.                                                                               |
+| styles          | Здесь хранятся таблицы стилей для всего приложения.                                                                      |
 
-### Files Description Table
+### Таблица Описания Файлов
 
-| File Name          | Description                                                                                                                                                                                |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| main.jsx           | The entry point for the LORE website application. It typically renders the main component of your application into the root DOM element.                                                   |
-| App.jsx            | The main component of your application. This component is usually responsible for rendering other components and does more.                                                                |
-| global-styles.scss | Contains the CSS styling (in a SCSS format) for the entire application.                                                                                                                    |
-| index.css          | This is just the entry point for TailwindCSS to be used in the application.                                                                                                                |
-| index.html         | The main HTML file that serves as the entry point for the LORE website application. It usually contains a root DOM element where the LORE website application is mounted using JavaScript. |
+| Имя Файла          | Описание                                                                                                                                                                                   |
+| ------------------ | ------------------- |
+| main.jsx           | Точка входа для приложения веб-сайта LORE. Обычно он отображает основной компонент приложения веб-сайта LORE в корневой элемент DOM.|
+| App.jsx            | Основной компонент приложения веб-сайта LORE. Этот компонент обычно отвечает за рендеринг других компонентов и делает больше.|
+| global-styles.scss | Содержит стили CSS (в формате SCSS) для всего приложения.|
+| index.css          | Это всего лишь точка входа для TailwindCSS, которая будет использоваться в приложении.|
+| index.html         | Основной HTML-файл, который служит точкой входа для приложения веб-сайта LORE. Обычно он содержит корневой элемент DOM, к которому приложение веб-сайта LORE монтируется с помощью JavaScript. |
 
-[⬆️ Back To Top ⬆️](#welcome-to-the-lore-website-development)
+[⬆️ Вернуться Наверх ⬆️](#оглавление)
 
 ## 🧁 Recommended Worflow
 

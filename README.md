@@ -50,7 +50,7 @@ npm run dev
 
 ## 🍋 Project's Files/Folder Structure
 
-View the current project's folder structure and a description of the folders.
+View the current project's folder structure, also the descriptions of the files and folders are given.
 
 ### Diagram of The Folder Structure
 
@@ -76,7 +76,7 @@ View the current project's folder structure and a description of the folders.
 | Folder Name     | Description                                                                                                                               |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | platform        | Where the main code lives. The LORE website app is ran from here.                                                                         |
-| node_modules    | Contains all the project's dependencies and their dependencies. When you run `npm install`, Node.js installs the necessary packages here. |
+| node_modules    | Contains all the project's dependencies. When you run `npm install`, Node.js installs the necessary packages here. |
 | src             | Contains the actual source code of the LORE website application.                                                                          |
 | assets          | Stores static assets such as images, fonts, etc that are specific to the project.                                                         |
 | components      | This is where reusable components from [Shadcn/ui component library](https://ui.shadcn.com/) are stored.                                  |
@@ -87,10 +87,10 @@ View the current project's folder structure and a description of the folders.
 
 | File Name          | Description                                                                                                                                                                                |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| main.jsx           | The entry point for the LORE website application. It typically renders the main component of your application into the root DOM element.                                                   |
-| App.jsx            | The main component of your application. This component is usually responsible for rendering other components and does more.                                                                |
-| global-styles.scss | Contains the CSS styling (in a SCSS format) for the entire application.                                                                                                                    |
-| index.css          | This is just the entry point for TailwindCSS to be used in the application.                                                                                                                |
+| main.jsx           | The entry point for the LORE website application. It typically renders the main component of the LORE website application into the root DOM element. |
+| App.jsx            | The main component of the LORE website application. This component is usually responsible for rendering other components and does more. |
+| global-styles.scss | Contains the CSS styling (in a SCSS format) for the entire application. |
+| index.css          | This is just the entry point for TailwindCSS to be used in the application. |
 | index.html         | The main HTML file that serves as the entry point for the LORE website application. It usually contains a root DOM element where the LORE website application is mounted using JavaScript. |
 
 [⬆️ Back To Top ⬆️](#table-of-contents)
