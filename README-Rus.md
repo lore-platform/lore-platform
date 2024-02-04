@@ -32,21 +32,21 @@ git clone https://github.com/lore-platform/lore-platform.git
 cd .\platform\
 ```
 
-**4. Install the dependencies by using this command:**
+**4. Установите зависимости, используя эту команду:**
 
 ```cmd
 npm install
 ```
 
-This will create the `node_modules` folder, `package-lock.json`, and an updated version of the `package.json` in the `./platform` directory.
+Это создаст папку `node_modules`, файл `package-lock.json` и обновленную версию файла `package.json` в каталоге `./platform`.
 
-**5. After the dependencies are installed, start the development server (the website):**
+**5. После установки зависимостей запустите сервер разработки (веб-сайт):**
 
 ```cmd
 npm run dev
 ```
 
-[⬆️ Back To Top ⬆️](#welcome-to-the-lore-website-development)
+[⬆️ Вернуться наверх ⬆️](#оглавление)
 
 ## 🍋 Project's Files/Folder Structure
 

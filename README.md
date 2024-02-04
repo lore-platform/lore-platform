@@ -1,4 +1,4 @@
-<h1 align="center"> Welcome to the LORE website development </h1>
+<h1 align="center" id="h1"> Welcome to the LORE website development </h1>
 
 <p align="center">This is the code repo for the LORE website. This file will help guide you on how the structure of the project works.</p>
 
@@ -46,7 +46,7 @@ This will create the `node_modules` folder, `package-lock.json`, and an updated 
 npm run dev
 ```
 
-[⬆️ Back To Top ⬆️](#welcome-to-the-lore-website-development)
+[⬆️ Back To Top ⬆️](#table-of-contents)
 
 ## 🍋 Project's Files/Folder Structure
 
@@ -93,7 +93,7 @@ View the current project's folder structure and a description of the folders.
 | index.css          | This is just the entry point for TailwindCSS to be used in the application.                                                                                                                |
 | index.html         | The main HTML file that serves as the entry point for the LORE website application. It usually contains a root DOM element where the LORE website application is mounted using JavaScript. |
 
-[⬆️ Back To Top ⬆️](#welcome-to-the-lore-website-development)
+[⬆️ Back To Top ⬆️](#table-of-contents)
 
 ## 🧁 Recommended Worflow
 
@@ -147,4 +147,4 @@ We need to keep track of the branches that will merge into the `main` branch. Fo
 - The number is found from the task on the [Trello Board](https://trello.com/b/H5r3AFI2/main-development-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5-p%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5)
 - The branch name is given in the task on the [Trello Board](https://trello.com/b/H5r3AFI2/main-development-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5-p%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5)
 
-[⬆️ Back To Top ⬆️](#welcome-to-the-lore-website-development)
+[⬆️ Back To Top ⬆️](#table-of-contents)
