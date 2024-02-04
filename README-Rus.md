@@ -4,9 +4,9 @@
 
 <p align="center">📆 <b>Последнее обновление:</b> 04 фев 2024</p>
 
-## Table of Contents
+## Оглавление
 
-- [🍇 Setting Up Project To Local Machine](#🍇-setting-up-project-to-local-machine)
+- [🍇 Настройка проекта на локальном компьютере](#🍇-настройка-проекта-на-локальном-компьютере)
 - [🍋 Project's Files/Folder Structure](#🍋-projects-filesfolder-structure)
   - [Diagram of The Folder Structure](#diagram-of-the-folder-structure)
   - [Folders Description Table](#folders-description-table)
@@ -16,17 +16,17 @@
   - [How To Make Pull Requests](#how-to-make-pull-requests)
   - [Branch Naming Conventions](#branch-naming-conventions)
 
-## 🍇 Setting Up Project To Local Machine
+## 🍇 Настройка проекта на локальном компьютере
 
-**1. Clone the repo to a folder in your local machine by using this command:**
+**1. Клонируйте репозиторий в папку на вашем локальном компьютере, используя эту команду:**
 
 ```cmd
 git clone https://github.com/lore-platform/lore-platform.git
 ```
 
-**2. Open the folder in your code editor**
+**2. Откройте папку в вашем редакторе кода.**
 
-**3. Move into the `.\platform` folder by using this command:**
+**3. Перейдите в папку `.\platform` с помощью этой команды:**
 
 ```cmd
 cd .\platform\
