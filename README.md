@@ -132,6 +132,9 @@ Follow these steps in making a pull request:
 11. Find the 'Merge pull request' button and click the down arrow on the right
 12. Click the 'Squash and merge' option
     - This will turn all of you commits into one big commit
+13. Click the button again
+14. In the popup, make sure the title is correct - delete the '(#)' and a number next it
+15. Leave the description as it is - it is just a list of the commits you made
 
 ### Branch Naming Conventions
 
