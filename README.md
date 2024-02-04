@@ -12,9 +12,9 @@
   - [Folders Description Table](#folders-description-table)
   - [Files Description Table](#files-description-table)
 - [🧁 Recommended Worflow](#🧁-recommended-worflow)
-    - [Working On A Specfic Task](#working-on-a-specfic-task)
-    - [How To Make Pull Requests](#how-to-make-pull-requests)
-    - [Branch Naming Conventions](#branch-naming-conventions)
+  - [Working On A Specfic Task](#working-on-a-specfic-task)
+  - [How To Make Pull Requests](#how-to-make-pull-requests)
+  - [Branch Naming Conventions](#branch-naming-conventions)
 
 ## 🍇 Setting Up Project To Local Machine
 
@@ -127,7 +127,11 @@ Follow these steps in making a pull request:
    - Reviewers: Assign izicodes (Izzy Zennah)
 8. Click the 'Create Pull Request' button
 9. Wait for Izzy to review you code
-    - You might need to make changes if she asks for some
+   - You might need to make changes if she asks for some
+10. After Izzy approves you code, go back to your pull request page
+11. Find the 'Merge pull request' button and click the down arrow on the right
+12. Click the 'Squash and merge' option
+    - This will turn all of you commits into one big commit
 
 ### Branch Naming Conventions
 
