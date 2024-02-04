@@ -1,5 +1,5 @@
 import "./global-styles.scss";
-import { Navbar } from "./global_components/Navbar";
+import { Navbar } from "./lore_components/Navbar";
 // import { SearchBar } from "./global_components/SearchBar";
 
 function App() {
