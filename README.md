@@ -12,6 +12,9 @@
   - [Folders Description Table](#folders-description-table)
   - [Files Description Table](#files-description-table)
 - [🧁 Recommended Worflow](#🧁-recommended-worflow)
+    - [Working On A Specfic Task](#working-on-a-specfic-task)
+    - [How To Make Pull Requests](#how-to-make-pull-requests)
+    - [Branch Naming Conventions](#branch-naming-conventions)
 
 ## 🍇 Setting Up Project To Local Machine
 
@@ -110,7 +113,7 @@ If you are working on a task from the Trello board, creating a page / part of a 
 
 Now that you made your changes, you need to make pull requests so other people can check your work before we can push your changes into the `main` branch and into deployment.
 
-Follow these steps in making a pull request
+Follow these steps in making a pull request:
 
 1. Go to to the [project's repo online](https://github.com/lore-platform/lore-platform/tree/main)
 2. Click 'New pull request' in the Pull Requests page
@@ -119,8 +122,12 @@ Follow these steps in making a pull request
 5. The Title of the Pull Request should be {branch name} - {the title of the task from the Trello board}
    - _For example: LO-0001 - Create the navigation bar component_
 6. You do not need to add a description. You can if you want.
-7. Look on the right side navugation bar:
-   - Assigne: Assign yourself
+7. Look on the right side navigation bar:
+   - Assignes: Assign yourself
+   - Reviewers: Assign izicodes (Izzy Zennah)
+8. Click the 'Create Pull Request' button
+9. Wait for Izzy to review you code
+    - You might need to make changes if she asks for some
 
 ### Branch Naming Conventions
 
