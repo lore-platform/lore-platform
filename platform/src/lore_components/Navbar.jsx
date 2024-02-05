@@ -6,12 +6,14 @@ export const Navbar = () => {
   return (
     <>
       <nav className="grid grid-cols-3 mb-3 justify-between items-center">
-        <img
-          className="min-w-0.5"
-          src="./src/assets/logo.png"
-          alt="image of the the LORE logo"
-          id="loreLogo"
-        />
+        <Link to="/">
+          <img
+            className="min-w-0.5"
+            src="./src/assets/logo.png"
+            alt="image of the the LORE logo"
+            id="loreLogo"
+          />
+        </Link>
         <SearchBar />
         <ul className="flex justify-end gap-4 place-content-center">
           <li>

@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./global-styles.scss";
 import { Navbar } from "./lore_components/Navbar";
-// import Login from "./pages/Login";
 import { Home, Login, Signup } from "./pages";
 
 function App() {
