@@ -2,6 +2,7 @@
 $neutral-900: #000000;
 $neutral-800: #171717;
 $neutral-700: #2D2D2D;
+$neutral-600: #4F4F4F;
 
 $white: #FEFEFE;
 
@@ -19,8 +20,14 @@ $grey: #616161;
 .lorebg-n700 {
   background-color: $neutral-700;
 }
+.lorebg-n600 {
+  background-color: $neutral-600;
+}
 
 // Text
 .lore-text-n800 {
+  color: $neutral-800;
+}
+.hover\:lore-text-n800:hover {
   color: $neutral-800;
 }
