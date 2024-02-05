@@ -1,13 +1,14 @@
 import "./global-styles.scss";
 import { Navbar } from "./lore_components/Navbar";
-// import { SearchBar } from "./global_components/SearchBar";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <>
-      <div className="py-7 px-10">
+      <div className="py-7 px-10 h-dvh">
         <Navbar />
-        <h1>Hi guys this is a test sorry!</h1>
+        <h1>Homepage</h1>
+        <Login />
       </div>
     </>
   );
