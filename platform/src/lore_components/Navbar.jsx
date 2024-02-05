@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { SearchBar } from "./SearchBar";
-import "../styles/index.scss";
-
+import LoreLogo from "../assets/logo.png";
+import NavigationLink from "./NagivationLink";
 export const Navbar = () => {
   return (
     <>
@@ -9,19 +9,15 @@ export const Navbar = () => {
         <Link to="/">
           <img
             className="min-w-0.5"
-            src="./src/assets/logo.png"
-            alt="image of the the LORE logo"
+            src={LoreLogo}
+            alt="LORE Company Logo"
             id="loreLogo"
           />
         </Link>
         <SearchBar />
         <ul className="flex justify-end gap-4 place-content-center">
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/signup">Sign Up</Link>
-          </li>
+          <NavigationLink to="/login" label="Login" />
+          <NavigationLink to="/signup" label="Signup" />
         </ul>
       </nav>
     </>
