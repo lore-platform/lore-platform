@@ -1,14 +1,13 @@
 // Colours
 $neutral-900: #000000;
 $neutral-800: #171717;
-$neutral-700: #2D2D2D;
-$neutral-600: #4F4F4F;
+$neutral-700: #2d2d2d;
+$neutral-600: #353535;
+$neutral-500: #4f4f4f;
 
-$white: #FEFEFE;
+$white: #fefefe;
 
 $grey: #616161;
-
-
 
 // Background colours
 .lorebg-n900 {
@@ -23,6 +22,19 @@ $grey: #616161;
 .lorebg-n600 {
   background-color: $neutral-600;
 }
+.lorebg-n500 {
+  background-color: $neutral-500;
+}
+
+// Background colours: Hover
+.hover\:lorebg-n600:hover {
+  background-color: $neutral-600;
+}
+
+// Background colours: Focus
+.focus\:lorebg-n600:focus {
+  background-color: $neutral-600;
+}
 
 // Text
 .lore-text-n800 {
@@ -31,3 +43,4 @@ $grey: #616161;
 .hover\:lore-text-n800:hover {
   color: $neutral-800;
 }
+

@@ -29,7 +29,7 @@ const PasswordRest = () => {
           />
           <Button
             title="Enter"
-            className="w-4/6 hover:font-normal lorebg-n600 text-white hover:lore-text-n800 hover:bg-white transition duration-300"
+            className="w-4/6 hover:font-normal lorebg-n500 text-white hover:lore-text-n800 hover:bg-white transition duration-300"
             onClick={successPopup}
           />
         </div>
