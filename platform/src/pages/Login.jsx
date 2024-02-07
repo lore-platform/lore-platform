@@ -1,6 +1,6 @@
 //  -----> Imports <-----
 import { useNavigate, Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import FormTextBox from "@/lore_components/FormTextBox";
 import fakeUser from "../assets/fakeuser.json";
@@ -25,6 +25,12 @@ const Login = () => {
     setPassword(event.target.value);
   };
 
+  // ⛔ Error handling: When the username, password or both are wrong, give the textbox an outline of red
+  const handleErrors = (storedUsername, storedPassword) => {
+    setUsernameError(username !== storedUsername);
+    setPasswordError(password !== storedPassword);
+  };
+
   // 🌳 When the user enters the "Enter" key on their keyboard when on the textboxes will log them in
   const getLoggedIn = (event) => {
     if (event.key === "Enter") {
@@ -34,10 +40,7 @@ const Login = () => {
       if (username === storedUsername && password === storedPassword) {
         navigate("/logged-in");
       } else {
-        // ⛔ Error handling: When the username, password or both are wrong, give the textbox an outline of red
-        setUsernameError(username !== storedUsername);
-        setPasswordError(password !== storedPassword);
-        console.log("Login failed");
+        handleErrors(storedUsername, storedPassword);
       }
     }
   };
@@ -50,13 +53,15 @@ const Login = () => {
     if (username === storedUsername && password === storedPassword) {
       navigate("/logged-in");
     } else {
-      // ⛔ Error handling: When the username, password or both are wrong, give the textbox an outline of red
-      setUsernameError(username !== storedUsername);
-      setPasswordError(password !== storedPassword);
-      console.log("Login failed");
-      console.log("Login failed");
+      handleErrors(storedUsername, storedPassword);
     }
   };
+
+  // 🍒 When you click off the Login page, reset the error messages to false (hiding it)
+  useEffect(() => {
+    setUsernameError(false);
+    setPasswordError(false);
+  }, [location.pathname]);
 
   // HTML part of the component
   return (
@@ -88,17 +93,12 @@ const Login = () => {
                 onKeyDown={getLoggedIn}
                 error={passwordError}
               />
-              {/* {passwordError && usernameError ? (
-                <ErrorMessage message="Incorrect username or password" />
-              ) : (
-                ""
-              )} */}
-              {passwordError && usernameError ? (
-                <ErrorMessage message="Incorrect username or password" />
-              ) : passwordError ? (
-                <ErrorMessage message="Incorrect password" />
-              ) : usernameError ? (
+              {usernameError && !passwordError ? (
                 <ErrorMessage message="Incorrect username" />
+              ) : passwordError && !usernameError ? (
+                <ErrorMessage message="Incorrect password" />
+              ) : passwordError && usernameError ? (
+                <ErrorMessage message="Incorrect username or password" />
               ) : null}
               <Link
                 to={"password-reset"}
