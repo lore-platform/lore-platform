@@ -45,7 +45,7 @@ const PasswordRest = () => {
     }
   };
   return (
-    <>
+    <div className="mt-36 max-[600px]:mt-20">
       <h1 className="text-xl mb-5 text-center">Password Reset</h1>
       <div className="flex flex-col lorebg-n800 rounded-2xl justify-center px-6 py-5 w-96">
         <div className="flex flex-col gap-y-4 items-center w-full">
@@ -68,7 +68,7 @@ const PasswordRest = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
