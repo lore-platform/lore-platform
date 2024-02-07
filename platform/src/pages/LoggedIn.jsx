@@ -1,8 +1,6 @@
 
 const LoggedIn = () => {
-  return (
-    <div>I am logged in</div>
-  )
+  return <div className="mt-20">I am logged in</div>;
 }
 
 export default LoggedIn

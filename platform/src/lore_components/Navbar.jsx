@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { SearchBar } from "./SearchBar";
 import LoreLogo from "../assets/logo.png";
 import NavigationLink from "./NagivationLink";
+
 export const Navbar = () => {
   return (
     <>

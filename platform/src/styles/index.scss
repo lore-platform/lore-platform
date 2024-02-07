@@ -1,8 +1,14 @@
 @import "colors";
 
 // search bar
-nav {
+nav,
+.breadcrumbs {
   a:hover {
     text-decoration: underline;
   }
+}
+
+.breadcrumbs .crumb:before {
+  content: "/";
+  margin: 0 8px;
 }

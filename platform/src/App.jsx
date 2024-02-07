@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./global-styles.scss";
 import "./styles/index.scss";
 import { Navbar } from "./lore_components/Navbar";
+import Breadcrumb from "./lore_components/Breadcrumb";
 import { Home, Login, Signup, LoggedIn, PasswordReset } from "./pages";
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <>
       <div className="py-7 px-10 h-dvh">
         <Navbar />
-        <div className="flex flex-col justify-center items-center h-4/6">
+        <Breadcrumb />
+        <div className="flex flex-col items-center h-5/6">
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/login" element={<Login />}>
