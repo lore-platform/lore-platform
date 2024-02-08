@@ -18,7 +18,6 @@ const Breadcrumb = () => {
     .map((crumb) => {
       let formattedCrumb = crumb.charAt(0).toUpperCase() + crumb.slice(1);
       if (formattedCrumb.includes("-")) {
-        console.log("yes");
         formattedCrumb = formattedCrumb.replace("-", " ");
         formattedCrumb = capitalizeFirstLetterEachWord(formattedCrumb);
       }

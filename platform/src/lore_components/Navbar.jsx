@@ -9,7 +9,7 @@ import { FaSearch } from "react-icons/fa";
 export const Navbar = ({ responsiveMode }) => {
   return (
     <>
-      {responsiveMode ? (
+      {responsiveMode === "small" ? (
         <nav className="grid grid-cols-3 mb-3 justify-between items-center">
           <Link to="/">
             <img
