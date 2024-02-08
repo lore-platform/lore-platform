@@ -64,8 +64,6 @@ const Login = ({ responsiveMode }) => {
     setPasswordError(false);
   }, [location.pathname]);
 
-  console.log(responsiveMode);
-
   // HTML part of the component
   return (
     <>
@@ -113,7 +111,9 @@ const Login = ({ responsiveMode }) => {
               ) : null}
               <Link
                 to={"password-reset"}
-                className="text-xs font-normal hover:underline"
+                className={`font-normal hover:underline ${
+                  responsiveMode === "small" ? "text-sm" : "text-xs"
+                }`}
               >
                 Forgot your password?
               </Link>
