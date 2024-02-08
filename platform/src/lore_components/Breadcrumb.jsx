@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 
-const Breadcrumb = () => {
+const Breadcrumb = ({ responsiveMode }) => {
   const location = useLocation();
 
   let currentLink = "";
@@ -32,7 +33,11 @@ const Breadcrumb = () => {
     });
 
   return location.pathname === "/" ? null : (
-    <div className="breadcrumbs flex lore-text-grey font-medium">
+    <div
+      className={`breadcrumbs flex lore-text-grey font-medium ${
+        responsiveMode === "small" ? "text-sm" : ""
+      }`}
+    >
       <Link to="/">Homepage</Link>
       {crumbs}
     </div>

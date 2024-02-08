@@ -121,7 +121,7 @@ const Login = ({ responsiveMode }) => {
           </div>
           <Button
             title="Enter"
-            className="mt-8 w-full hover:font-normal lorebg-n500 text-white hover:lore-text-n800 hover:bg-white transition duration-300"
+            className="mt-6 w-full hover:font-normal lorebg-n500 text-white hover:lore-text-n800 hover:bg-white transition duration-300"
             onClick={buttonLogin}
           />
         </div>

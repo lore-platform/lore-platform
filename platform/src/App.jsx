@@ -18,7 +18,7 @@ function App() {
         }`}
       >
         <Navbar responsiveMode={screenSize} />
-        <Breadcrumb />
+        <Breadcrumb responsiveMode={screenSize} />
         <div className="flex flex-col items-center h-5/6 w-full">
           <Routes>
             <Route path="/" element={<Home />}></Route>
