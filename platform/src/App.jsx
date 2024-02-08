@@ -31,13 +31,20 @@ function App() {
   console.log(width);
   return (
     <>
-      <div className="py-7 px-10 h-dvh">
+      <div
+        className={`py-7 h-dvh ${
+          screenSize === "small" ? "px-7 w-full" : "px-10"
+        }`}
+      >
         <Navbar responsiveMode={screenSize} />
         <Breadcrumb />
-        <div className="flex flex-col items-center h-5/6">
+        <div className="flex flex-col items-center h-5/6 w-full">
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/login" element={<Login />}>
+            <Route
+              path="/login"
+              element={<Login responsiveMode={screenSize} />}
+            >
               <Route path="password-reset" element={<PasswordReset />} />
             </Route>
             <Route path="/logged-in" element={<LoggedIn />}></Route>

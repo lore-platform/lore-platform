@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 //  -----> Imports <-----
 import { useNavigate, Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -9,7 +10,7 @@ import Button from "@/lore_components/Button";
 import ErrorMessage from "@/lore_components/ErrorMessage";
 
 //  -----> Actual Component <-----
-const Login = () => {
+const Login = ({ responsiveMode }) => {
   // 🕹️ The Programming Logic
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -63,13 +64,23 @@ const Login = () => {
     setPasswordError(false);
   }, [location.pathname]);
 
+  console.log(responsiveMode);
+
   // HTML part of the component
   return (
     <>
       {location.pathname === "/login" ? (
-        <div className="mt-36 max-[600px]:mt-20">
+        <div
+          className={`mt-36 max-[600px]:mt-20 ${
+            responsiveMode === "small" ? "w-full" : ""
+          }`}
+        >
           <h1 className="text-xl mb-5 text-center">Login</h1>
-          <div className="flex flex-col lorebg-n800 rounded-2xl justify-center px-6 py-5 w-96">
+          <div
+            className={`flex flex-col lorebg-n800 rounded-2xl justify-center px-6 py-5 w-96 ${
+              responsiveMode === "small" ? "w-full" : ""
+            }`}
+          >
             <div className="flex flex-col gap-y-4 items-center w-full">
               <FormTextBox
                 ErrorHandlingEnabled
@@ -106,13 +117,13 @@ const Login = () => {
               >
                 Forgot your password?
               </Link>
-              <Button
-                title="Enter"
-                className="w-4/6 hover:font-normal lorebg-n500 text-white hover:lore-text-n800 hover:bg-white transition duration-300"
-                onClick={buttonLogin}
-              />
             </div>
           </div>
+          <Button
+            title="Enter"
+            className="mt-8 w-full hover:font-normal lorebg-n500 text-white hover:lore-text-n800 hover:bg-white transition duration-300"
+            onClick={buttonLogin}
+          />
         </div>
       ) : (
         <PasswordRest />
