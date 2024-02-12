@@ -12,3 +12,36 @@ nav,
   content: "/";
   margin: 0 8px;
 }
+
+.navMenuShd {
+  box-shadow: -3.2px -3.2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav-menu {
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+}
+
+.nav-menu-exit {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+}
+
+.nav-menu-enter {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+}
