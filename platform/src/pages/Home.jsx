@@ -15,14 +15,14 @@ const Home = () => {
       <h1>Welcome to the Testing Home page!</h1>
       <p>This is in the development stage!</p>
       <button
-        className="rounded-full p-2 animate__animated animate__fadeInUp"
+        className="rounded-full p-1 animate__animated animate__fadeInUp"
         id="finderBtn"
         onClick={enterFinder}
       >
         <Button
           title="Unlock Finder's Magic"
           onClick={enterFinder}
-          className="bg-black font-bold text-white"
+          className="bg-black font-semibold text-white"
         />
       </button>
     </div>
