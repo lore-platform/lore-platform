@@ -45,7 +45,7 @@ export const Navbar = ({ responsiveMode }) => {
           </div>
           {/* The popup nav menu */}
           <div
-            className={`lorebg-n800 rounded-l-[1.5rem] absolute pt-8 pl-8 h-dvh top-10 -right-[60%] w-2/4 navMenuShd nav-menu ${
+            className={`lorebg-n800 rounded-l-[1.5rem] absolute pt-8 pl-8 h-dvh top-10 -right-[60%] navMenuShd nav-menu w-[200px] ${
               showMenu ? "nav-menu-exit" : "nav-menu-enter"
             }`}
           >
@@ -58,6 +58,11 @@ export const Navbar = ({ responsiveMode }) => {
               <NavigationLink
                 to="/signup"
                 label="Sign Up"
+                onClick={handleLinkClick}
+              />
+              <NavigationLink
+                to="/finder"
+                label="Finder Feature"
                 onClick={handleLinkClick}
               />
             </ul>
@@ -77,6 +82,7 @@ export const Navbar = ({ responsiveMode }) => {
           <ul className="flex justify-end gap-4 place-content-center">
             <NavigationLink to="/login" label="Login" />
             <NavigationLink to="/signup" label="Sign Up" />
+            <NavigationLink to="/finder" label="Finder Feature" />
           </ul>
         </nav>
       )}

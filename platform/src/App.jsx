@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import "./global-styles.scss";
 import "./styles/index.scss";
+import "animate.css";
 import { Navbar } from "./lore_components/Navbar";
 import Breadcrumb from "./lore_components/Breadcrumb";
-import { Home, Login, Signup, LoggedIn, PasswordReset } from "./pages";
+import { Home, Login, Signup, LoggedIn, PasswordReset, Finder } from "./pages";
 import { useWindowSize } from "./reusable/useScreenSize";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             </Route>
             <Route path="/logged-in" element={<LoggedIn />}></Route>
             <Route path="/signup" element={<Signup />}></Route>
+            <Route path="/finder" element={<Finder />}></Route>
           </Routes>
         </div>
       </div>

@@ -31,17 +31,36 @@ nav,
 }
 
 .nav-menu-exit {
-  transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
+  transform: translateX(-78%);
+  -webkit-transform: translateX(-78%);
+  -moz-transform: translateX(-78%);
+  -ms-transform: translateX(-78%);
+  -o-transform: translateX(-78%);
 }
 
 .nav-menu-enter {
-  transform: translateX(0%);
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  -o-transform: translateX(0%);
+  transform: translateX(22%);
+  -webkit-transform: translateX(22%);
+  -moz-transform: translateX(22%);
+  -ms-transform: translateX(22%);
+  -o-transform: translateX(22%);
+}
+
+#finderBtn {
+  background: rgb(165, 160, 246);
+  background: linear-gradient(
+    123deg,
+    rgba(165, 160, 246, 1) 0%,
+    #5854ee 100%
+  );
+  box-shadow: 0 0 15px 1px #9793e0;
+
+  &:hover {
+    box-shadow: 0 0 15px 1px #e7e6f1;
+  }
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
 }
