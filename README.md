@@ -27,13 +27,8 @@ git clone https://github.com/lore-platform/lore-platform.git
 
 **2. Open the folder in your code editor**
 
-**3. Move into the `.\platform` folder by using this command:**
 
-```cmd
-cd .\platform\
-```
-
-**4. Install the dependencies by using this command:**
+**3. Install the dependencies by using this command:**
 
 ```cmd
 npm install
@@ -41,7 +36,7 @@ npm install
 
 This will create the `node_modules` folder, `package-lock.json`, and an updated version of the `package.json` in the `./platform` directory.
 
-**5. After the dependencies are installed, start the development server (the website):**
+**4. After the dependencies are installed, start the development server (the website):**
 
 ```cmd
 npm run dev
