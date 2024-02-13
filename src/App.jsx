@@ -15,7 +15,7 @@ function App() {
     <>
       <div
         className={`py-7 h-dvh ${
-          screenSize === "small" ? "px-7 w-full overflow-x-hidden" : "px-10"
+          screenSize === "xsmall" ? "px-7 w-full overflow-x-hidden" : "px-10"
         }`}
       >
         <Navbar responsiveMode={screenSize} />

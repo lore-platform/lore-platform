@@ -16,7 +16,8 @@ export function useWindowSize() {
 }
 
 function getScreenSize(width) {
-  if (width <= 600) return "small";
+  if (width <= 600) return "xsmall";
+  else if (width <= 850) return "small";
   else if (width <= 1024) return "medium";
   else if (width <= 1280) return "large";
   else if (width <= 1536) return "xlarge";
