@@ -35,7 +35,7 @@ const Breadcrumb = ({ responsiveMode }) => {
   return location.pathname === "/" ? null : (
     <div
       className={`breadcrumbs flex lore-text-grey font-medium ${
-        responsiveMode === "small" ? "text-sm" : ""
+        responsiveMode === "xsmall" ? "text-sm" : ""
       }`}
     >
       <Link to="/">Homepage</Link>

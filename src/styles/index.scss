@@ -30,7 +30,7 @@ nav,
   -o-transition: transform 0.5s ease-in-out;
 }
 
-.nav-menu-exit {
+.nav-menu-exit1 {
   transform: translateX(-78%);
   -webkit-transform: translateX(-78%);
   -moz-transform: translateX(-78%);
@@ -38,7 +38,22 @@ nav,
   -o-transform: translateX(-78%);
 }
 
-.nav-menu-enter {
+.nav-menu-enter1 {
+  transform: translateX(22%);
+  -webkit-transform: translateX(22%);
+  -moz-transform: translateX(22%);
+  -ms-transform: translateX(22%);
+  -o-transform: translateX(22%);
+}
+.nav-menu-exit2 {
+  transform: translateX(-180%);
+  -webkit-transform: translateX(-180%);
+  -moz-transform: translateX(-180%);
+  -ms-transform: translateX(-180%);
+  -o-transform: translateX(-180%);
+}
+
+.nav-menu-enter2 {
   transform: translateX(22%);
   -webkit-transform: translateX(22%);
   -moz-transform: translateX(22%);
@@ -48,11 +63,7 @@ nav,
 
 #finderBtn {
   background: rgb(165, 160, 246);
-  background: linear-gradient(
-    123deg,
-    rgba(165, 160, 246, 1) 0%,
-    #5854ee 100%
-  );
+  background: linear-gradient(123deg, rgba(165, 160, 246, 1) 0%, #5854ee 100%);
   box-shadow: 0 0 15px 1px #9793e0;
 
   &:hover {

@@ -29,7 +29,7 @@ export const Navbar = ({ responsiveMode }) => {
   //
   return (
     <>
-      {responsiveMode === "small" ? (
+      {responsiveMode === "xsmall" || responsiveMode === "small" ? (
         <nav className={`flex mb-3 justify-between items-center relative `}>
           <Link to="/">
             <img
@@ -45,11 +45,19 @@ export const Navbar = ({ responsiveMode }) => {
           </div>
           {/* The popup nav menu */}
           <div
-            className={`lorebg-n800 rounded-l-[1.5rem] absolute pt-8 pl-8 h-dvh top-10 -right-[60%] navMenuShd nav-menu w-[200px] z-[100] ${
-              showMenu ? "nav-menu-exit" : "nav-menu-enter"
+            className={`lorebg-n800 rounded-l-[1.5rem] absolute pt-8 pl-8 h-dvh top-10 -right-[60%] navMenuShd nav-menu w-[210px] z-[100] ${
+              responsiveMode === "xsmall"
+                ? showMenu
+                  ? "nav-menu-exit1"
+                  : "nav-menu-enter1"
+                : responsiveMode === "small"
+                ? showMenu
+                  ? "nav-menu-exit2"
+                  : "nav-menu-enter2"
+                : ""
             }`}
           >
-            <ul className="flex flex-col gap-5 place-content-center text-base">
+            <ul className="flex flex-col gap-6 place-content-center text-base">
               <NavigationLink
                 to="/login"
                 label="Login"

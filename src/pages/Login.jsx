@@ -70,13 +70,13 @@ const Login = ({ responsiveMode }) => {
       {location.pathname === "/login" ? (
         <div
           className={`mt-36 max-[600px]:mt-20 ${
-            responsiveMode === "small" ? "w-full" : ""
+            responsiveMode === "xsmall" ? "w-full" : ""
           }`}
         >
           <h1 className="text-xl mb-5 text-center">Login</h1>
           <div
             className={`flex flex-col lorebg-n800 rounded-2xl justify-center px-6 py-5 w-96 ${
-              responsiveMode === "small" ? "w-full" : ""
+              responsiveMode === "xsmall" ? "w-full" : ""
             }`}
           >
             <div className="flex flex-col gap-y-4 items-center w-full">
@@ -112,7 +112,7 @@ const Login = ({ responsiveMode }) => {
               <Link
                 to={"password-reset"}
                 className={`font-normal hover:underline ${
-                  responsiveMode === "small" ? "text-sm" : "text-xs"
+                  responsiveMode === "xsmall" ? "text-sm" : "text-xs"
                 }`}
               >
                 Forgot your password?
