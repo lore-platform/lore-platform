@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Routes, Route } from "react-router-dom";
 import "./global-styles.scss";
 import "./styles/index.scss";
@@ -6,6 +7,16 @@ import { Navbar } from "./lore_components/Navbar";
 import Breadcrumb from "./lore_components/Breadcrumb";
 import { Home, Login, Signup, LoggedIn, PasswordReset, Finder } from "./pages";
 import { useWindowSize } from "./reusable/useScreenSize";
+
+function Layout({ children, screenSize }) {
+  return (
+    <>
+      <Navbar responsiveMode={screenSize} />
+      <Breadcrumb responsiveMode={screenSize} />
+      <div className="flex flex-col items-center h-5/6 w-full">{children}</div>
+    </>
+  );
+}
 
 function App() {
   const { screenSize } = useWindowSize();
@@ -18,7 +29,54 @@ function App() {
           screenSize === "xsmall" ? "px-7 w-full overflow-x-hidden" : "px-10"
         }`}
       >
-        <Navbar responsiveMode={screenSize} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout screenSize={screenSize}>
+                <Home />
+              </Layout>
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <Layout screenSize={screenSize}>
+                <Login responsiveMode={screenSize} />
+                <Route path="password-reset" element={<PasswordReset />} />
+              </Layout>
+            }
+          />
+          <Route
+            path="/logged-in"
+            element={
+              <Layout screenSize={screenSize}>
+                <LoggedIn />
+              </Layout>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <Layout screenSize={screenSize}>
+                <Signup />
+              </Layout>
+            }
+          />
+          <Route
+            path="/finder"
+            element={
+              screenSize === "xsmall" || screenSize === "small" ? (
+                <Finder />
+              ) : (
+                <Layout screenSize={screenSize}>
+                  <Finder />
+                </Layout>
+              )
+            }
+          />
+        </Routes>
+        {/* <Navbar responsiveMode={screenSize} />
         <Breadcrumb responsiveMode={screenSize} />
         <div className="flex flex-col items-center h-5/6 w-full">
           <Routes>
@@ -33,7 +91,7 @@ function App() {
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/finder" element={<Finder />}></Route>
           </Routes>
-        </div>
+        </div> */}
       </div>
     </>
   );
