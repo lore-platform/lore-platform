@@ -45,7 +45,7 @@ export const Navbar = ({ responsiveMode }) => {
           </div>
           {/* The popup nav menu */}
           <div
-            className={`lorebg-n800 rounded-l-[1.5rem] absolute pt-8 pl-8 h-dvh top-10 -right-[60%] navMenuShd nav-menu w-[200px] ${
+            className={`lorebg-n800 rounded-l-[1.5rem] absolute pt-8 pl-8 h-dvh top-10 -right-[60%] navMenuShd nav-menu w-[200px] z-[100] ${
               showMenu ? "nav-menu-exit" : "nav-menu-enter"
             }`}
           >
