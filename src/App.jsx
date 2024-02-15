@@ -13,7 +13,9 @@ function Layout({ children, screenSize }) {
     <>
       <Navbar responsiveMode={screenSize} />
       <Breadcrumb responsiveMode={screenSize} />
-      <div className="flex flex-col items-center h-5/6 w-full">{children}</div>
+      <div className="flex flex-col items-center h-[90%] w-full">
+        {children}
+      </div>
     </>
   );
 }
@@ -39,11 +41,16 @@ function App() {
             }
           />
           <Route
-            path="/login"
+            path="/login/*"
             element={
               <Layout screenSize={screenSize}>
-                <Login responsiveMode={screenSize} />
-                <Route path="password-reset" element={<PasswordReset />} />
+                <Routes>
+                  <Route
+                    path="/"
+                    element={<Login responsiveMode={screenSize} />}
+                  />
+                  <Route path="password-reset" element={<PasswordReset />} />
+                </Routes>
               </Layout>
             }
           />
@@ -67,31 +74,15 @@ function App() {
             path="/finder"
             element={
               screenSize === "xsmall" || screenSize === "small" ? (
-                <Finder />
+                <Finder responsiveMode={screenSize} />
               ) : (
                 <Layout screenSize={screenSize}>
-                  <Finder />
+                  <Finder responsiveMode={screenSize} />
                 </Layout>
               )
             }
           />
         </Routes>
-        {/* <Navbar responsiveMode={screenSize} />
-        <Breadcrumb responsiveMode={screenSize} />
-        <div className="flex flex-col items-center h-5/6 w-full">
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route
-              path="/login"
-              element={<Login responsiveMode={screenSize} />}
-            >
-              <Route path="password-reset" element={<PasswordReset />} />
-            </Route>
-            <Route path="/logged-in" element={<LoggedIn />}></Route>
-            <Route path="/signup" element={<Signup />}></Route>
-            <Route path="/finder" element={<Finder />}></Route>
-          </Routes>
-        </div> */}
       </div>
     </>
   );
