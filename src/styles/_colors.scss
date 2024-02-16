@@ -4,6 +4,8 @@ $neutral-800: #171717;
 $neutral-700: #2d2d2d;
 $neutral-600: #353535;
 $neutral-500: #4f4f4f;
+$purple-500: #534eed;
+$purple-300: #7671f7;
 
 $grey: #616161;
 
@@ -12,16 +14,19 @@ $grey: #616161;
   background-color: $neutral-900;
 }
 .lorebg-n800 {
-  background-color: $neutral-800;
+  background-color: $neutral-800 !important;
 }
 .lorebg-n700 {
-  background-color: $neutral-700;
+  background-color: $neutral-700 !important;
 }
 .lorebg-n600 {
   background-color: $neutral-600;
 }
 .lorebg-n500 {
   background-color: $neutral-500;
+}
+.lorebg-p500 {
+  background-color: $purple-500 !important;
 }
 
 // Background colours: Hover
@@ -38,10 +43,15 @@ $grey: #616161;
 .lore-text-n800 {
   color: $neutral-800;
 }
+.lore-text-n700 {
+  color: $neutral-700;
+}
+.lore-text-p300 {
+  color: $purple-300;
+}
 .lore-text-grey {
   color: $grey;
 }
 .hover\:lore-text-n800:hover {
   color: $neutral-800;
 }
-

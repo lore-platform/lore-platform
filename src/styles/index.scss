@@ -75,3 +75,16 @@ nav,
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
 }
+
+.lore-purple-shadow {
+  box-shadow: 0 0 15px 1px $purple-300;
+}
+
+.lore-svg-purple-shadow {
+  -webkit-filter: drop-shadow(0px 0px 10px rgb(131, 106, 241));
+  filter: drop-shadow(0px 0px 10px rgb(131, 106, 241));
+}
+
+.loreLeftCursor {
+  cursor: url(src/assets/lCurs.ico), auto;
+}

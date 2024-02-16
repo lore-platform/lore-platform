@@ -1,11 +1,24 @@
+/* eslint-disable react/prop-types */
 import { Routes, Route } from "react-router-dom";
 import "./global-styles.scss";
 import "./styles/index.scss";
 import "animate.css";
 import { Navbar } from "./lore_components/Navbar";
 import Breadcrumb from "./lore_components/Breadcrumb";
-import { Home, Login, Signup, LoggedIn, PasswordReset, Finder } from "./pages";
+import { Home, Login, Signup, LoggedIn, PasswordReset, Finder, FinderSearch } from "./pages";
 import { useWindowSize } from "./reusable/useScreenSize";
+
+function Layout({ children, screenSize }) {
+  return (
+    <>
+      <Navbar responsiveMode={screenSize} />
+      <Breadcrumb responsiveMode={screenSize} />
+      <div className="flex flex-col items-center h-[90%] w-full">
+        {children}
+      </div>
+    </>
+  );
+}
 
 function App() {
   const { screenSize } = useWindowSize();
@@ -18,22 +31,68 @@ function App() {
           screenSize === "xsmall" ? "px-7 w-full overflow-x-hidden" : "px-10"
         }`}
       >
-        <Navbar responsiveMode={screenSize} />
-        <Breadcrumb responsiveMode={screenSize} />
-        <div className="flex flex-col items-center h-5/6 w-full">
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route
-              path="/login"
-              element={<Login responsiveMode={screenSize} />}
-            >
-              <Route path="password-reset" element={<PasswordReset />} />
-            </Route>
-            <Route path="/logged-in" element={<LoggedIn />}></Route>
-            <Route path="/signup" element={<Signup />}></Route>
-            <Route path="/finder" element={<Finder />}></Route>
-          </Routes>
-        </div>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout screenSize={screenSize}>
+                <Home />
+              </Layout>
+            }
+          />
+          <Route
+            path="/login/*"
+            element={
+              <Layout screenSize={screenSize}>
+                <Routes>
+                  <Route
+                    path="/"
+                    element={<Login responsiveMode={screenSize} />}
+                  />
+                  <Route path="password-reset" element={<PasswordReset />} />
+                </Routes>
+              </Layout>
+            }
+          />
+          <Route
+            path="/logged-in"
+            element={
+              <Layout screenSize={screenSize}>
+                <LoggedIn />
+              </Layout>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <Layout screenSize={screenSize}>
+                <Signup />
+              </Layout>
+            }
+          />
+          <Route
+            path="/finder/*"
+            element={
+              screenSize === "xsmall" || screenSize === "small" ? (
+                <>
+                  <Finder responsiveMode={screenSize} />
+                  <Route path="/search" element={<FinderSearch />} />
+                </>
+              ) : (
+                <Layout screenSize={screenSize}>
+                  <Routes>
+                    <Route
+                      path="/"
+                      element={<Finder responsiveMode={screenSize} />}
+                    />
+                    <Route path="/search" element={<FinderSearch />} />
+                    {/* Add more routes for other functionalities within Finder */}
+                  </Routes>
+                </Layout>
+              )
+            }
+          />
+        </Routes>
       </div>
     </>
   );
