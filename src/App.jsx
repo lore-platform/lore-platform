@@ -5,7 +5,15 @@ import "./styles/index.scss";
 import "animate.css";
 import { Navbar } from "./lore_components/Navbar";
 import Breadcrumb from "./lore_components/Breadcrumb";
-import { Home, Login, Signup, LoggedIn, PasswordReset, Finder, FinderSearch } from "./pages";
+import {
+  Home,
+  Login,
+  Signup,
+  LoggedIn,
+  PasswordReset,
+  Finder,
+  FinderSearch,
+} from "./pages";
 import { useWindowSize } from "./reusable/useScreenSize";
 
 function Layout({ children, screenSize }) {
@@ -75,8 +83,13 @@ function App() {
             element={
               screenSize === "xsmall" || screenSize === "small" ? (
                 <>
-                  <Finder responsiveMode={screenSize} />
-                  <Route path="/search" element={<FinderSearch />} />
+                  <Routes>
+                    <Route
+                      path="/"
+                      element={<Finder responsiveMode={screenSize} />}
+                    />
+                    <Route path="search" element={<FinderSearch />} />
+                  </Routes>
                 </>
               ) : (
                 <Layout screenSize={screenSize}>
@@ -85,8 +98,7 @@ function App() {
                       path="/"
                       element={<Finder responsiveMode={screenSize} />}
                     />
-                    <Route path="/search" element={<FinderSearch />} />
-                    {/* Add more routes for other functionalities within Finder */}
+                    <Route path="search" element={<FinderSearch />} />
                   </Routes>
                 </Layout>
               )
