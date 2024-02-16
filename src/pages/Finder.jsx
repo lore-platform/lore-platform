@@ -1,22 +1,16 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { CgHeart } from "react-icons/cg";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import FinderTags from "@/lore_components/FinderTags";
 import Button from "@/lore_components/Button";
 
 const Finder = ({ responsiveMode }) => {
   const [currentCard, setCurrentCard] = useState(1);
   const [selectedTags, setSelectedTags] = useState([]);
-  const navigate = useNavigate();
 
   const handleCardClick = () => {
     setCurrentCard(currentCard + 1);
-  };
-
-  // 🌳 When the user clicks the "Enter" button on the screen, it will log them in
-  const enterBtn = () => {
-    navigate("/search");
   };
 
   return (
@@ -100,12 +94,13 @@ const Finder = ({ responsiveMode }) => {
             id="finderBtn"
             disabled
           >
-            <Button
-              title="Enter"
-              className={`bg-black font-semibold text-white`}
-              disabled={selectedTags.length === 0}
-              onClick={enterBtn}
-            />
+            <Link to="search">
+              <Button
+                title="Enter"
+                className={`bg-black font-semibold text-white`}
+                disabled={selectedTags.length === 0}
+              />
+            </Link>
           </button>
         </div>
       </div>
